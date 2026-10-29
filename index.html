@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exotic Abhi | Electrical & Electronics Engineer</title>
+<meta name="description" content="Exotic Abhi - Electrical & Electronics Engineering student. Embedded systems, IoT projects and electrical study PDFs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--bg:#070a12;--s1:#0e1320;--s2:#151c2f;--line:#222b44;--txt:#eef2ff;--mut:#93a0c2;--amb:#ffb800;--cy:#22d3ee;--grn:#34d399}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;background:
+radial-gradient(700px 400px at 85% 8%,#ffb80018,transparent),radial-gradient(800px 500px at 5% 40%,#22d3ee14,transparent),
+url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%231a2340' stroke-width='1.5'%3E%3Cpath d='M0 30h40l15 15h30M60 0v35M120 80H90l-15 15v25M30 120V90h25'/%3E%3C/g%3E%3Cg fill='%23222b44'%3E%3Ccircle cx='85' cy='45' r='3'/%3E%3Ccircle cx='60' cy='35' r='3'/%3E%3Ccircle cx='75' cy='95' r='3'/%3E%3Ccircle cx='30' cy='90' r='3'/%3E%3C/g%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:auto;padding:0 22px}
+section{padding:90px 0}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;margin-bottom:10px}
+h2 em{font-style:normal;color:var(--amb)}
+.sub{color:var(--mut);margin-bottom:42px;max-width:58ch}
+nav{position:sticky;top:0;z-index:50;background:#070a12d9;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font:700 1.5rem 'Space Grotesk';display:flex;align-items:center;gap:8px}
+.logo b{width:34px;height:34px;border-radius:9px;background:var(--amb);color:#111;display:grid;place-items:center;font-size:1.1rem}
+.links{display:flex;gap:4px}
+.links a{padding:8px 15px;border-radius:8px;color:var(--mut);font-weight:500;font-size:.95rem}
+.links a:hover{color:#fff;background:var(--s2)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font:700 .98rem 'DM Sans';border:1px solid var(--line);background:var(--s2);color:#fff;cursor:pointer;transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--amb)}
+.btn.p{background:var(--amb);color:#14110a;border-color:var(--amb);box-shadow:0 10px 30px #ffb80033}
+.btn.g{background:#0f2a22;border-color:#1c5a45;color:var(--grn)}
+#burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+/* hero */
+.hero{padding:70px 0 50px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:50px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;padding:7px 16px;border:1px solid #3a3115;background:#ffb8000f;color:var(--amb);border-radius:99px;font-size:.88rem;font-weight:500;margin-bottom:22px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--amb);animation:pl 1.6s infinite}
+@keyframes pl{50%{opacity:.25}}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.7rem);line-height:1.02;font-weight:700}
+.hero h1 span{display:block;color:var(--amb)}
+.role{font:600 1.35rem 'Space Grotesk';color:var(--cy);margin:16px 0;min-height:2rem}
+.role span{border-right:2px solid var(--cy);padding-right:3px}
+.d{color:var(--mut);max-width:54ch;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:0;margin-top:42px;border:1px solid var(--line);border-radius:14px;background:var(--s1);width:max-content;max-width:100%}
+.stats div{padding:16px 26px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font:700 1.7rem 'Space Grotesk';color:var(--amb)}.stats small{color:var(--mut)}
+.photo{position:relative;width:min(400px,84vw);margin:auto}
+.frame{position:relative;aspect-ratio:4/5;border-radius:28px;padding:3px;background:linear-gradient(150deg,var(--amb),transparent 40%,var(--cy));box-shadow:0 0 80px #ffb80022}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;border-radius:26px;display:block}
+.chip{position:absolute;padding:8px 16px;background:#0e1320ee;border:1px solid var(--line);border-radius:12px;font-weight:700;font-size:.85rem;backdrop-filter:blur(8px);animation:fl 5s ease-in-out infinite}
+.chip.a{top:8%;right:-9%}.chip.b{top:52%;left:-11%;animation-delay:-2s}.chip.c{bottom:-2%;right:6%;background:var(--grn);color:#04150e;border:0;animation-delay:-3.5s}
+@keyframes fl{50%{transform:translateY(-8px)}}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:26px;transition:border-color .2s}
+.card:hover{border-color:#4a3f15}
+.ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.6rem;background:#ffb8001a;border:1px solid #3a3115;margin-bottom:16px}
+.card h3{font-size:1.2rem;margin-bottom:8px}.card p{color:var(--mut);font-size:.94rem}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}
+.pill{padding:3px 12px;border-radius:99px;font-size:.76rem;font-weight:700;background:#0b2a33;color:var(--cy);border:1px solid #17505e}
+.pill.k{background:#33270a;color:var(--amb);border-color:#5c4513}.pill.ok{background:#0b2a1f;color:var(--grn);border-color:#17523b}
+ul.ck{list-style:none}ul.ck li{color:#c9d2ee;font-size:.93rem;padding:3px 0}ul.ck li:before{content:"✓ ";color:var(--grn);font-weight:700}
+.price{font:700 1.5rem 'Space Grotesk';color:var(--amb)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.bar{margin-bottom:18px}.bar>div:first-child{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px;font-size:.95rem}
+.track{height:8px;border-radius:8px;background:var(--s2);overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--amb),var(--cy));transition:width 1.2s ease}
+.edu{border-left:2px solid var(--line);padding-left:20px;margin-top:8px}
+.edu div{position:relative;padding:0 0 20px}.edu div:before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--amb);box-shadow:0 0 0 4px #ffb80022}
+.edu b{display:block}.edu span{color:var(--mut);font-size:.9rem}
+/* store */
+.store .card{display:flex;flex-direction:column}
+.pdf{height:120px;margin:-26px -26px 18px;border-radius:18px 18px 0 0;background:linear-gradient(135deg,#1b2440,#0e1320);display:grid;place-items:center;position:relative;overflow:hidden}
+.pdf span{font:700 .78rem 'Space Grotesk';position:absolute;top:12px;right:12px;background:#ff4d4d;color:#fff;padding:2px 9px;border-radius:6px}
+.pdf i{font-style:normal;font-size:3rem}
+.store .bot{margin-top:auto;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.old{color:var(--mut);text-decoration:line-through;font-size:.9rem;margin-left:6px}
+/* projects */
+.filters{display:inline-flex;gap:4px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--s1);margin-bottom:28px;flex-wrap:wrap}
+.filters button{padding:10px 20px;border:0;border-radius:8px;background:none;color:var(--mut);font:700 .93rem 'DM Sans';cursor:pointer}
+.filters button.on{background:var(--amb);color:#14110a}
+.proj .th{height:130px;margin:-26px -26px 18px;border-radius:18px 18px 0 0;display:grid;place-items:center;font-size:3.2rem;background:var(--s2)}
+.meta{color:var(--mut);font-size:.85rem;margin:4px 0 6px}
+.proj a.l{color:var(--cy);font-weight:700;margin-right:16px;font-size:.92rem}
+/* contact */
+.cbox{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;background:var(--s1);border:1px solid var(--line);border-radius:24px;padding:34px}
+.ci{display:flex;gap:15px;margin-bottom:20px;align-items:center}.ci .ic{width:46px;height:46px;font-size:1.2rem;margin:0}
+.ci small{color:var(--mut);display:block;font-size:.8rem}
+.soc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.soc a{padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--s2);font-weight:700;font-size:.92rem}.soc a:hover{border-color:var(--amb)}
+form input,form textarea{width:100%;padding:14px 16px;margin-bottom:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:#fff;font:inherit}
+form input:focus,form textarea:focus{outline:2px solid var(--amb);border-color:transparent}
+footer{text-align:center;padding:30px;color:var(--mut);border-top:1px solid var(--line);font-size:.9rem}
+/* modal */
+#modal{position:fixed;inset:0;z-index:100;background:#000b;display:none;align-items:center;justify-content:center;padding:16px;overflow:auto}
+#modal.on{display:flex}
+.mbox{background:var(--s1);border:1px solid var(--line);border-radius:22px;padding:28px;max-width:430px;width:100%;text-align:center;position:relative}
+.mbox h3{font-size:1.3rem;padding:0 24px}
+.x{position:absolute;right:16px;top:12px;background:none;border:0;color:var(--mut);font-size:1.8rem;cursor:pointer}
+#qr{display:inline-block;background:#fff;padding:12px;border-radius:14px;margin:16px 0 8px}
+.upi{font:700 .92rem 'DM Sans';background:var(--s2);border:1px dashed #4a3f15;border-radius:10px;padding:9px 12px;word-break:break-all;margin:8px 0 14px}
+.mbox .btn{width:100%;justify-content:center;margin-top:9px}
+.note{font-size:.82rem;color:var(--mut);margin-top:12px;text-align:left}
+@media(max-width:860px){
+.hero .wrap,.two,.cbox{grid-template-columns:1fr}
+.links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:#070a12;padding:12px;border-bottom:1px solid var(--line)}
+.links.open{display:flex}#burger{display:block}nav>.wrap>.btn{display:none}
+.photo{order:-1}.chip.a{right:-2%}.chip.b{left:-2%}.stats div{padding:14px 16px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a href="#home" class="logo"><b id="ini">EA</b><span id="lname">Exotic Abhi</span></a>
+  <div class="links" id="links">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#store">PDF Store</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </div>
+  <a href="#store" class="btn p" style="padding:10px 22px">Buy PDFs</a>
+  <button id="burger" aria-label="Menu">☰</button>
+</div></nav>
+
+<header class="hero" id="home"><div class="wrap">
+  <div>
+    <span class="tag"><i></i><span id="tagline"></span></span>
+    <h1>I'm <span id="name"></span></h1>
+    <div class="role"><span id="role"></span></div>
+    <p class="d" id="bio"></p>
+    <div class="cta"><a href="#store" class="btn p">Get Electrical PDFs</a><a href="#projects" class="btn">View Projects</a></div>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="photo">
+    <div class="frame"><img src="profile.jpg" alt="Exotic Abhi"></div>
+    <span class="chip a">⚡ Electrical</span><span class="chip b">🔧 Embedded</span><span class="chip c">● Open to Work</span>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap two">
+  <div>
+    <h2>About <em>Me</em></h2>
+    <p class="sub" id="about-text"></p>
+    <h3 style="margin-bottom:14px">Education</h3>
+    <div class="edu" id="edu"></div>
+  </div>
+  <div id="skills"></div>
+</div></section>
+
+<section id="store" class="store"><div class="wrap">
+  <h2>Electrical <em>PDF Store</em></h2>
+  <p class="sub">Notes, guides and project files for EEE students. Pay with any UPI app and get your PDF on WhatsApp.</p>
+  <div class="grid" id="pdfs"></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>My <em>Services</em></h2>
+  <p class="sub">What I can build for you.</p>
+  <div class="grid" id="svc"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>My <em>Projects</em></h2>
+  <p class="sub">Personal builds and client work.</p>
+  <div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="Personal">Personal</button><button data-f="Client">Client</button></div>
+  <div class="grid" id="plist"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Get In <em>Touch</em></h2>
+  <p class="sub">Your message opens in WhatsApp, ready to send.</p>
+  <div class="cbox">
+    <div><div id="cinfo"></div><h3 style="margin:8px 0">Social Media</h3><div class="soc" id="soc"></div></div>
+    <form id="form">
+      <input name="n" placeholder="Your name" required>
+      <input name="e" type="email" placeholder="Your email" required>
+      <input name="p" placeholder="Your phone number">
+      <input name="s" placeholder="Project / subject" required>
+      <textarea name="m" rows="5" placeholder="Tell me about your idea, timeline, and budget..." required></textarea>
+      <button class="btn p" style="width:100%;justify-content:center" type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</div></section>
+<footer id="foot"></footer>
+
+<div id="modal"><div class="mbox">
+  <button class="x" id="mx" aria-label="Close">×</button>
+  <h3 id="mt"></h3>
+  <div class="price" id="mp" style="margin-top:6px"></div>
+  <div id="qr"></div>
+  <div style="font-size:.85rem;color:var(--mut)">Scan with PhonePe, Google Pay, Paytm or BHIM</div>
+  <div class="upi" id="uid"></div>
+  <a class="btn p" id="payapp" href="#">Pay with UPI app</a>
+  <button class="btn" id="copy">Copy UPI ID</button>
+  <a class="btn g" id="paid" href="#" target="_blank" rel="noopener">I've paid - send screenshot</a>
+  <p class="note">After payment, send the screenshot and UTR number on WhatsApp. Your PDF is sent after the payment is verified.</p>
+</div></div>
+
+<script>
+/* ================== EDIT YOUR DETAILS HERE ================== */
+const CONFIG = {
+  name: "Exotic Abhi",
+  initials: "EA",
+  tagline: "Electrical & Electronics Engineering",
+  roles: ["Electrical & Electronics Engineer", "Embedded Systems Developer", "IoT & Circuit Designer"],
+  bio: "Electrical and Electronics Engineering student with hands-on experience in embedded systems, circuit design and IoT. I also share electrical study material for students.",
+  about: "I am an Electrical and Electronics Engineering student who enjoys designing circuits, programming microcontrollers and turning ideas into working hardware. Add 1-2 more lines about yourself here.",
+  education: [
+    ["B.Tech - Electrical & Electronics Engineering","Your University Name · 2023 - 2027"],
+    ["12th (Intermediate)","LBT College, Buxar"],
+    ["10th (Matriculation)","High School Raghunathpur"]
+  ],
+  stats: [["2+","Years Exp."],["10+","Projects"],["100+","Students"]],
+  skills: [["Electrical Machines & Power Systems",85],["Arduino / ESP32",85],["Embedded C / C++",80],["MATLAB / Simulink",75],["PCB Design (Proteus / KiCad)",75],["Python",65]],
+
+  /* ---- UPI PAYMENT ---- */
+  upi: "BHARATPE2Y0G0R6C3V57831@unitype",
+  payeeName: "Exotic Abhi",
+
+  /* ---- PDFs FOR SALE: change title, price, details ---- */
+  pdfs: [
+    {icon:"⚡",title:"Basic Electrical Engineering Notes",desc:"Complete BEE notes: DC circuits, AC circuits, transformers and machines basics.",pages:"60 pages",price:49,old:99},
+    {icon:"🏭",title:"Electrical Machines Notes",desc:"DC machines, induction motor, synchronous machine and transformer, exam focused.",pages:"80 pages",price:79,old:149},
+    {icon:"🔌",title:"Power Systems Notes",desc:"Generation, transmission, distribution, fault analysis and protection.",pages:"90 pages",price:99,old:199},
+    {icon:"📟",title:"Arduino & ESP32 Project Guide",desc:"10 beginner to advanced projects with circuit diagrams and code.",pages:"50 pages",price:149,old:299},
+    {icon:"📐",title:"Circuit Theory Formula Sheet",desc:"All important formulas and theorems on one revision-ready sheet.",pages:"8 pages",price:29,old:59},
+    {icon:"🎁",title:"Complete EEE Bundle",desc:"All PDFs above in one pack. Best value for semester exams.",pages:"5 PDFs",price:249,old:499}
+  ],
+
+  services: [
+    {icon:"🔌",title:"Embedded & IoT Projects",desc:"Arduino, ESP32 and Raspberry Pi based smart devices with sensors and mobile control.",tags:["Arduino","ESP32","IoT"],points:["Circuit design","Firmware coding","Testing & debugging"],price:"₹5,000+"},
+    {icon:"🧩",title:"PCB Design & Simulation",desc:"Schematic, PCB layout and simulation using Proteus, KiCad and MATLAB.",tags:["Proteus","KiCad","MATLAB"],points:["Schematic design","Gerber files","Simulation report"],price:"₹3,000+"},
+    {icon:"🎓",title:"Final Year & College Projects",desc:"Complete EEE project support: hardware, code, report and PPT.",tags:["Hardware","Report","PPT"],points:["Project idea help","Full setup","Viva guidance"],price:"₹8,000+"}
+  ],
+  projects: [
+    {type:"Personal",icon:"💡",title:"Smart Home Automation",year:2025,dur:"2 Months",tags:["ESP32","IoT"],desc:"Control lights and fans from phone using ESP32 and relay modules.",live:"#",view:"#"},
+    {type:"Personal",icon:"🔋",title:"Solar Battery Charger",year:2025,dur:"1 Month",tags:["Solar","Arduino"],desc:"Solar charge controller with voltage and current monitoring.",live:"#",view:"#"},
+    {type:"Client",icon:"🏭",title:"Industrial Monitoring System",year:2026,dur:"3 Months",tags:["Sensors","Client"],desc:"Temperature and current monitoring with alerts for a local workshop.",live:"#",view:"#"}
+  ],
+  contact: {email:"youremail@gmail.com", phone:"+91 00000 00000", whatsapp:"910000000000", location:"Buxar, Bihar, India"},
+  social: [
+    ["Instagram","https://www.instagram.com/baba_amarjeet_tiwari?igsh=MTh4MW5idGdkeHFoOQ=="],
+    ["YouTube","https://youtube.com/@rebelamarjeet6919?si=rQ4aS8TjJ8SIMLOH"],
+    ["Facebook","https://www.facebook.com/share/1FowqbWwd7/"],
+    ["X (Twitter)","https://x.com/Amarjeet219?t=ddg_tYNSNG4sXuo9crHbsw&s=09"],
+    ["GitHub","https://github.com/amarjeet8021"],
+    ["WhatsApp","https://wa.me/910000000000"]
+  ]
+};
+/* ============================================================ */
+
+const $=id=>document.getElementById(id), C=CONFIG, ct=C.contact;
+document.title=C.name+" | Electrical & Electronics Engineer";
+$("ini").textContent=C.initials;$("lname").textContent=C.name;
+$("tagline").textContent=C.tagline;$("name").textContent=C.name;
+$("bio").textContent=C.bio;$("about-text").textContent=C.about;
+$("edu").innerHTML=C.education.map(e=>`<div><b>${e[0]}</b><span>${e[1]}</span></div>`).join("");
+$("stats").innerHTML=C.stats.map(s=>`<div><b>${s[0]}</b><small>${s[1]}</small></div>`).join("");
+$("skills").innerHTML="<h3 style='margin-bottom:20px;font-size:1.3rem'>Skills</h3>"+C.skills.map(s=>`<div class="bar"><div><span>${s[0]}</span><span>${s[1]}%</span></div><div class="track"><div class="fill" data-w="${s[1]}"></div></div></div>`).join("");
+$("pdfs").innerHTML=C.pdfs.map((p,i)=>`<div class="card"><div class="pdf"><span>PDF</span><i>${p.icon}</i></div><h3>${p.title}</h3><p>${p.desc}</p><div class="pills"><span class="pill">${p.pages}</span><span class="pill ok">Instant on WhatsApp</span></div><div class="bot"><div><span class="price">₹${p.price}</span><span class="old">₹${p.old}</span></div><button class="btn p" data-i="${i}" style="padding:10px 22px">Buy Now</button></div></div>`).join("");
+$("svc").innerHTML=C.services.map(s=>`<div class="card"><div class="ic">${s.icon}</div><h3>${s.title}</h3><p>${s.desc}</p><div class="pills">${s.tags.map(t=>`<span class="pill ok">${t}</span>`).join("")}</div><ul class="ck">${s.points.map(p=>`<li>${p}</li>`).join("")}</ul><div style="margin-top:16px;display:flex;justify-content:space-between;align-items:center"><span class="price">${s.price}</span><a href="#contact" class="btn" style="padding:9px 20px">Get Quote</a></div></div>`).join("");
+function draw(f){$("plist").innerHTML=C.projects.filter(p=>f=="all"||p.type==f).map(p=>`<div class="card proj"><div class="th">${p.icon}</div><div class="pills" style="margin-top:0"><span class="pill ${p.type=="Client"?"k":""}">${p.type}</span>${p.tags.map(t=>`<span class="pill">${t}</span>`).join("")}<span class="pill ok">Completed</span></div><h3>${p.title}</h3><div class="meta">${p.year} · ${p.dur}</div><p>${p.desc}</p><div style="margin-top:14px"><a class="l" href="${p.live}" target="_blank">Live</a><a class="l" href="${p.view}" target="_blank">View</a></div></div>`).join("")}
+draw("all");
+$("filters").onclick=e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#filters button").forEach(x=>x.classList.remove("on"));b.classList.add("on");draw(b.dataset.f)};
+$("cinfo").innerHTML=[["✉️","Email",ct.email],["📞","Phone",ct.phone],["💬","WhatsApp","Chat instantly"],["📍","Location",ct.location]].map(r=>`<div class="ci"><div class="ic">${r[0]}</div><div><small>${r[1]}</small>${r[2]}</div></div>`).join("");
+$("soc").innerHTML=C.social.map(s=>`<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join("");
+$("foot").textContent="© "+new Date().getFullYear()+" "+C.name+". All rights reserved.";
+$("form").onsubmit=e=>{e.preventDefault();const f=e.target,q=encodeURIComponent;
+  window.open(`https://wa.me/${ct.whatsapp}?text=${q(`Hello ${C.name}!\nName: ${f.n.value}\nEmail: ${f.e.value}\nPhone: ${f.p.value}\nSubject: ${f.s.value}\n\n${f.m.value}`)}`,"_blank")};
+$("burger").onclick=()=>$("links").classList.toggle("open");
+$("links").onclick=()=>$("links").classList.remove("open");
+
+/* UPI payment popup */
+$("pdfs").onclick=e=>{const b=e.target.closest("button[data-i]");if(!b)return;
+  const p=C.pdfs[b.dataset.i],q=encodeURIComponent;
+  const link=`upi://pay?pa=${C.upi}&pn=${q(C.payeeName)}&am=${p.price}&cu=INR&tn=${q(p.title)}`;
+  $("mt").textContent=p.title;$("mp").textContent="₹"+p.price;$("uid").textContent=C.upi;
+  $("payapp").href=link;
+  $("paid").href=`https://wa.me/${ct.whatsapp}?text=${q(`Hi ${C.name}, I paid ₹${p.price} for "${p.title}". UTR / screenshot attached. Please send the PDF.`)}`;
+  $("qr").innerHTML="";
+  try{new QRCode($("qr"),{text:link,width:190,height:190})}catch(_){$("qr").textContent="QR unavailable - use the UPI ID"}
+  $("modal").classList.add("on")};
+$("mx").onclick=()=>$("modal").classList.remove("on");
+$("modal").onclick=e=>{if(e.target.id=="modal")$("modal").classList.remove("on")};
+$("copy").onclick=()=>{navigator.clipboard.writeText(C.upi).then(()=>{$("copy").textContent="Copied ✓";setTimeout(()=>$("copy").textContent="Copy UPI ID",1800)})};
+
+let ri=0,ci=0,del=false;const rs=$("role");
+(function type(){const w=C.roles[ri];rs.textContent=w.slice(0,ci);
+  if(!del&&ci==w.length){del=true;return setTimeout(type,1600)}
+  if(del&&ci==0){del=false;ri=(ri+1)%C.roles.length}
+  ci+=del?-1:1;setTimeout(type,del?30:70)})();
+new IntersectionObserver((en,o)=>en.forEach(x=>{if(x.isIntersecting){document.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset.w+"%");o.disconnect()}}),{threshold:.3}).observe($("skills"));
+</script>
+</body>
+</html>
